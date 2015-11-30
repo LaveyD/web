@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Spider Admin</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	 <!-- ... -->
+
+	  <link rel="stylesheet" href="../bower_components/datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="result.html">Spider Admin</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            
+
+			<div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+						<li>
+                            <a href="result.html"><i class="fa fa-table fa-fw"></i> Result</a>
+                        </li>
+                        <li>
+                            <a href="flot.html"><i class="fa fa-dashboard fa-fw"></i> Statistics</a>
+                        </li>
+                        
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Add Task</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default" style="width: 70%;">
+                        <div class="panel-heading">
+                            Basic Information
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Task name</label>
+                                            <input class="form-control">
+                                            <p class="help-block">Pls input your task name without !@#$%^&*!</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Keyword</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div> 
+										<div class="form-group">
+										<label>Time</label>
+										<div class="container" style="width:100%;margin-left: 0px; margin-bottom:0px;padding-left: 0px; padding-bottom: 0px;">
+										<div class='col-md-5' style="margin-left: 0px; margin-bottom:0px;padding-left: 0px; padding-bottom: 0px;width: 46%;">
+											<div class="form-group" >
+												<div class='input-group date' id='datetimepicker6'>
+													<input type='text' class="form-control" />
+													<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class='col-md-5' style="margin-left: 0px; margin-bottom:0px;padding-left: 0px; padding-bottom: 0px;width: 40px;margin-top: 5px;">
+											<div class="form-group" >
+												<span>To</span>
+											</div>
+										</div>
+										
+										<div class='col-md-5' style="margin-left: 0px; margin-bottom:0px;padding-left: 0px; padding-bottom: 0px;width: 46%;">
+											<div class="form-group">
+												<div class='input-group date' id='datetimepicker7'>
+													<input type='text' class="form-control" />
+													<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>		
+								    </div>										
+                                        <div class="form-group">
+                                            <label>Description</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                       
+                                        <div class="form-group">
+                                            <label>Schedule</label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">Run now
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">Every Day
+                                            </label>
+                                        </div>
+                                       
+                                        <button type="submit" class="btn btn-default">Submit Button</button>
+                                        <button type="reset" class="btn btn-default">Reset Button</button>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+	  <script type="text/javascript" src="../bower_components/datetimepicker/js/moment-with-locales.js"></script>
+	  <script type="text/javascript" src="../bower_components/datetimepicker/js/bootstrap-datetimepicker.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$('#datetimepicker6').datetimepicker();
+				$('#datetimepicker7').datetimepicker();
+				$("#datetimepicker6").on("dp.change",function (e) {
+					$('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+				});
+				$("#datetimepicker7").on("dp.change",function (e) {
+					$('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+				});
+			});
+		</script> 
+
+</body>
+
+</html>
